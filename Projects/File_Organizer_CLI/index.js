@@ -1,3 +1,4 @@
+import  PrintOrganizr  from "./Commands/organize.js";
 const command = process.argv[2];
 const directory = process.argv[3];
 console.log(command);
@@ -7,7 +8,7 @@ function handleCommand(command){
    switch (command) {
     case "organize":
         
-        console.log("command organized");
+        PrintOrganizr();
         break;
         
    case "tree":
