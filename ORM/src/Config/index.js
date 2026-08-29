@@ -1,4 +1,5 @@
-import dotenv from "dotenv";
-dotenv.config();
-const PORT = process.env.PORT || 3000;
-export default PORT;
+import ServerConfig from './server-config.js';
+
+export {
+    ServerConfig
+};

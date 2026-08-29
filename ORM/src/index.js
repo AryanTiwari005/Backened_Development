@@ -1,10 +1,11 @@
-import PORT from "./Config/index.js";
-import apiRoutes from "./Routes/index.js";
-import express from "express";
+import express from 'express';
+import { ServerConfig } from './Config/index.js';
+import apiRoutes from './routes/index.js';
+
 const app = express();
 
-app.use('/api',apiRoutes);
+app.use('/api', apiRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-})
+app.listen(ServerConfig.PORT, () => {
+    console.log(`Successfully started the server on PORT : ${ServerConfig.PORT}`);
+});

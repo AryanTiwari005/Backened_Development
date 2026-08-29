@@ -1,10 +1,14 @@
-const info = (req, res) => {
-    res.json({  
-        success: true,
-        name: "ORM",
-        error: null,
-        data:{}
-    })
-}
+import { StatusCodes } from 'http-status-codes';
 
-export default info;
+const info = (req, res) => {
+    return res.status(StatusCodes.OK).json({
+        success: true,
+        message: 'API is live',
+        error: {},
+        data: {}
+    });
+};
+
+export default {
+    info
+};

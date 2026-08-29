@@ -1,3 +1,5 @@
-import infoController from "../controllers/info-controller.js";
+import InfoController from './info-controller.js';
 
-export default infoController;
+export {
+    InfoController
+};
